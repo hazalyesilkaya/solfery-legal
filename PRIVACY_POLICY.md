@@ -29,7 +29,7 @@ Veri koruma görevlisi (DPO) atanmamıştır; tüm talepler yukarıdaki iletişi
 - Solfery’de **hesap, üyelik veya giriş yoktur.** Adınızı, e-postanızı, telefonunuzu, konumunuzu **istemeyiz ve toplamayız.**
 - İçe aktardığınız dosyalar ve bunlardan üretilen notalar **yalnızca cihazınızda** işlenir ve saklanır; **bize gönderilmez, biz bunlara erişemeyiz.**
 - Çevrimiçiyken nota kataloğu ve dosyalar sunuculardan indirilir. Her internet bağlantısında olduğu gibi **IP adresiniz ve teknik bağlantı bilgileriniz** altyapı sağlayıcılarına ulaşır.
-- Kişisel verilerinizi **satmayız**, reklam profili oluşturmayız, **otomatik karar verme veya profilleme yapmayız.**
+- Kişisel verilerinizi **satmayız.** Uygulamada reklam gösterilirse, kişiselleştirilmiş reklam **yalnızca açık rızanızla** yapılır. Rıza vermezseniz kişiselleştirilmemiş reklam görürsünüz. Biz kendimiz reklam profili oluşturmayız, **otomatik karar verme veya profilleme yapmayız.**
 
 ### 4. İşlenen Veriler, Amaçlar, Hukuki Sebepler ve Toplama Yöntemi
 
@@ -40,13 +40,15 @@ Veri koruma görevlisi (DPO) atanmamıştır; tüm talepler yukarıdaki iletişi
 | **İçe aktardığınız dosyalar** | Sistem dosya seçicisinde **sizin seçiminizle**, **yalnızca cihazda** | Nota üretimi, gösterim, çalma, PDF dışa aktarma | 5/2-c · 6/1-b |
 | **IP adresi, cihaz/ağ teknik bilgileri, istek zamanı** | Bağlantı sırasında **otomatik** olarak, sunucu günlükleri aracılığıyla | Katalog ve dosyaları iletmek, bilgi güvenliği, kötüye kullanımın önlenmesi | Meşru menfaat (5/2-f) · 6/1-f |
 | **Anonim çalma sayacı** (yalnızca nota kimliği; size ait tanımlayıcı içermez) | Bir notayı açtığınızda **otomatik** | “Trend” listeleri | Kişisel veri değildir; işlendiği ölçüde 5/2-f · 6/1-f |
+| **Satın alma bilgileri** (yalnızca ücretli bir özellik satın alırsanız): satın alma jetonu, ürün/abonelik kimliği, sipariş numarası, abonelik durumu ve tarihleri | Satın alma sırasında **Google Play Faturalandırma** tarafından Uygulamaya iletilir. Kart ve ödeme bilgileri **bize hiç gelmez.** | Premium erişimin açılması, doğrulanması ve geri yüklenmesi; iade ve tüketici taleplerinin yönetimi; dolandırıcılığın önlenmesi | Sözleşmenin ifası (5/2-c), hukuki yükümlülük (5/2-ç), bir hakkın tesisi/korunması (5/2-e) · 6/1-b, 6/1-c, 6/1-f |
+| **Reklam verileri** (yalnızca Uygulamada reklam gösterilmeye başlanırsa): reklam kimliği (Android Advertising ID), IP adresi, cihaz modeli, işletim sistemi, dil, yaklaşık konum (IP’den, ülke/şehir düzeyinde), reklam gösterim ve tıklama bilgileri | Reklam SDK’sı (Google AdMob) tarafından **otomatik** olarak | **Kişiselleştirilmemiş reklam:** reklamın gösterilmesi, gösterim sıklığının sınırlanması, sahte tıklama/dolandırıcılığın önlenmesi, ölçüm. **Kişiselleştirilmiş reklam:** ilgi alanlarınıza göre reklam | Kişiselleştirilmemiş: meşru menfaat (5/2-f), AB’de ePrivacy gereği rıza · 6/1-a/f. **Kişiselleştirilmiş: yalnızca açık rıza** (5/1) · 6/1-a — bkz. [Reklam Açık Rıza Metni](ads-consent.html) |
 | **Yazışmalar** (bize e-posta gönderirseniz) | **Sizin gönderiminizle** | Talebinizi yanıtlamak; hukuki taleplerin yönetimi | Bir hakkın tesisi, kullanılması veya korunması (5/2-e) ve 5/2-f · 6/1-f |
 
 **Meşru menfaatimiz:** Hizmeti güvenli ve kesintisiz sunmak, sunucuları kötüye kullanıma karşı korumak. Bu menfaat, yalnızca kısa süreli teknik kayıtlarla sınırlıdır ve temel haklarınızı aşmaz.
 
 **Veri vermek zorunlu mu?** Hiçbir kişisel veri vermeniz yasal olarak zorunlu değildir. IP adresi gibi teknik veriler, çevrimiçi içeriğin size ulaşması için teknik olarak gereklidir; bunları istemiyorsanız Uygulamayı çevrimdışı kütüphaneyle kullanabilirsiniz.
 
-**İşlemediğimiz veriler:** ad-soyad, e-posta (bize yazmadıkça), telefon, rehber, konum, fotoğraf ve kamera, **ses veya mikrofon kaydı**, reklam kimliği, finansal veriler ve **özel nitelikli kişisel veriler** (sağlık, biyometrik vb.).
+**İşlemediğimiz veriler:** ad-soyad, e-posta (bize yazmadıkça), kart veya banka bilgileri, telefon, rehber, konum, fotoğraf ve kamera, **ses veya mikrofon kaydı**, finansal veriler ve **özel nitelikli kişisel veriler** (sağlık, biyometrik vb.).
 
 
 ### 5. Cihaz İzinleri
@@ -62,7 +64,8 @@ Kişisel verilerinizi **satmayız, kiralamayız, pazarlama amacıyla paylaşmay�
 |---|---|---|---|
 | Veri işleyen — barındırma/veritabanı | Neon (Databricks, Inc.), Amazon Web Services altyapısı | Nota kataloğunun sunulması | Almanya (Frankfurt, AB) |
 | Veri işleyen — içerik dağıtımı | İçerik dağıtım ağı (CDN) sağlayıcısı | Nota dosyalarının ve kütüphanelerin iletimi | Küresel |
-| Uygulama mağazası (bağımsız veri sorumlusu) | Google LLC / Google Ireland Ltd. (Google Play) | Uygulamanın dağıtımı ve güncellenmesi | Küresel |
+| Uygulama mağazası ve ödeme hizmeti (bağımsız veri sorumlusu) | Google LLC / Google Ireland Ltd. (Google Play, Google Play Faturalandırma) | Uygulamanın dağıtımı ve güncellenmesi; ücretli özellik satın alırsanız ödemenin alınması ve satın almanın doğrulanması | Küresel |
+| Reklam ağı (yalnızca reklam gösterilirse) | Google LLC / Google Ireland Ltd. (Google AdMob) | Reklamların gösterilmesi, ölçümü, dolandırıcılığın önlenmesi; rıza verirseniz kişiselleştirme | Küresel / ABD |
 | Yetkili kamu kurumları ve mahkemeler | — | Kanuni yükümlülüklerin yerine getirilmesi, yalnızca usulüne uygun talep hâlinde | Türkiye / ilgili ülke |
 
 Google Play’in topladığı veriler için Google’ın kendi gizlilik politikası geçerlidir.
@@ -78,6 +81,8 @@ Google Play’in topladığı veriler için Google’ın kendi gizlilik politika
 | Cihazdaki veriler | Siz silene veya Uygulamayı kaldırana kadar. Kaldırma veya “Verileri temizle” işlemi hepsini siler; önbellek sistem tarafından da temizlenebilir. |
 | Sunucu/CDN teknik günlükleri | Sağlayıcının güvenlik saklama süresi kadar (genellikle günler ile birkaç ay arası), ardından otomatik silinir. |
 | Anonim çalma sayacı | Kişiyle ilişkilendirilemediği için süresiz. |
+| Satın alma bilgileri | Abonelik veya satın alma süresince; sonrasında tüketici uyuşmazlıklarına ilişkin zamanaşımı ve vergi/ticaret mevzuatındaki yasal saklama süreleri boyunca, ardından silinir veya anonimleştirilir. Cihazdaki kayıtlar Uygulamayı kaldırınca silinir. |
+| Reklam verileri | Google AdMob’un saklama politikasına göre. Rızanızı istediğiniz an geri çekebilir, reklam kimliğinizi Android Ayarlar → Gizlilik → Reklamlar bölümünden sıfırlayabilir veya silebilirsiniz. |
 | Yazışmalar | Talep sonuçlandıktan sonra **en fazla 3 yıl**, sonra silinir veya anonimleştirilir. Hukuki uyuşmazlık varsa zamanaşımı süresince. |
 
 Süresi dolan veriler Kişisel Verilerin Silinmesi, Yok Edilmesi veya Anonim Hâle Getirilmesi Hakkında Yönetmelik’e uygun olarak silinir, yok edilir veya anonimleştirilir.
@@ -95,6 +100,7 @@ Hiçbir iletim veya saklama yöntemi %100 güvenli değildir. Bir veri ihlali ol
 - Kimlik bilgisi zaten istenmez.
 - Bir çocuğa ait verinin işlendiğini düşünüyorsanız bize yazın; derhâl sileriz.
 - 18 yaşından küçük kullanıcılar Uygulamayı ebeveyn veya veli gözetiminde kullanmalıdır.
+- Reklam gösterilirse, reşit olmadığını belirten kullanıcılara kişiselleştirilmiş reklam gösterilmez.
 
 ### 11. Haklarınız ve Başvuru
 
@@ -153,7 +159,7 @@ No Data Protection Officer has been appointed; all requests may be sent to the c
 - Solfery has **no accounts, sign-up or login.** We **do not ask for or collect** your name, email, phone or location.
 - Files you import and scores generated from them are processed and stored **only on your device**; **they are never sent to us and we cannot access them.**
 - When online, the catalog and score files are downloaded from servers. As with any connection, your **IP address and technical connection data** reach infrastructure providers.
-- We **do not sell** personal data, do not build ad profiles, and do **not** carry out **automated decision-making or profiling.**
+- We **do not sell** personal data. If ads are shown, personalised ads are used **only with your explicit consent**; without it you see non-personalised ads. We do not build ad profiles ourselves, and do **not** carry out **automated decision-making or profiling.**
 
 ### 4. Data, Purposes, Legal Bases and Collection Method
 
@@ -164,13 +170,15 @@ No Data Protection Officer has been appointed; all requests may be sent to the c
 | **Files you import** | **Chosen by you** in the system picker, **on device only** | Score generation, display, playback, PDF export | 6(1)(b) · 5(2)(c) |
 | **IP address, device/network technical data, request time** | **Automatically** on connection, via server logs | Delivering content, information security, abuse prevention | Legitimate interests, 6(1)(f) · 5(2)(f) |
 | **Anonymous play counter** (score ID only; no identifier about you) | **Automatically** when you open a score | “Trending” lists | Not personal data; to the extent it is, 6(1)(f) · 5(2)(f) |
+| **Purchase data** (only if you buy a paid feature): purchase token, product/subscription ID, order number, subscription status and dates | Passed to the App by **Google Play Billing** at purchase. Card and payment details **never reach us.** | Unlocking, verifying and restoring Premium; handling refunds and consumer claims; fraud prevention | Contract 6(1)(b), legal obligation 6(1)(c), legitimate interests 6(1)(f) · 5(2)(c), (ç), (e) |
+| **Ad data** (only if the App starts showing ads): Android Advertising ID, IP address, device model, OS, language, approximate location (country/city level, from IP), ad impressions and clicks | **Automatically** by the ad SDK (Google AdMob) | **Non-personalised ads:** serving ads, frequency capping, fraud prevention, measurement. **Personalised ads:** ads based on your interests | Non-personalised: legitimate interests; consent where ePrivacy requires it in the EU · 6(1)(a)/(f), KVKK 5(2)(f). **Personalised: consent only** · 6(1)(a), KVKK 5(1) — see the [Ads Consent Notice](ads-consent.html) |
 | **Correspondence** (if you email us) | **Sent by you** | Replying; handling legal claims | 6(1)(f) · 5(2)(e)–(f) |
 
 **Our legitimate interest:** providing the service securely and reliably, and protecting servers from abuse. It is limited to short-lived technical logs and does not override your fundamental rights.
 
 **Is providing data mandatory?** No personal data is legally or contractually required. Technical data such as IP addresses is technically necessary for online content to reach you; you can use the App with the offline library instead.
 
-**We do not process:** name, email (unless you write to us), phone, contacts, location, photos or camera, **audio or microphone input**, advertising ID, financial data, or **special-category data** (health, biometric, etc.).
+**We do not process:** name, email (unless you write to us), card or bank details, phone, contacts, location, photos or camera, **audio or microphone input**, financial data, or **special-category data** (health, biometric, etc.).
 
 
 ### 5. Device Permissions
@@ -186,7 +194,8 @@ We **do not sell, rent or share** personal data for marketing. Data may only go 
 |---|---|---|---|
 | Processor — hosting/database | Neon (Databricks, Inc.) on Amazon Web Services | Serving the score catalog | Germany (Frankfurt, EU) |
 | Processor — content delivery | Content delivery network (CDN) provider | Delivering score files and libraries | Global |
-| App store (independent controller) | Google LLC / Google Ireland Ltd. (Google Play) | Distributing and updating the App | Global |
+| App store and payment service (independent controller) | Google LLC / Google Ireland Ltd. (Google Play, Google Play Billing) | Distributing and updating the App; if you buy a paid feature, taking payment and verifying the purchase | Global |
+| Ad network (only if ads are shown) | Google LLC / Google Ireland Ltd. (Google AdMob) | Serving and measuring ads, fraud prevention; personalisation if you consent | Global / USA |
 | Competent authorities and courts | — | Legal obligations, only upon a lawful request | Türkiye / relevant country |
 
 Google’s own privacy policy governs data collected by Google Play.
@@ -202,6 +211,8 @@ Google’s own privacy policy governs data collected by Google Play.
 | On-device data | Until you delete it or uninstall the App. Uninstalling or “Clear data” removes everything; cache may also be cleared by the system. |
 | Server/CDN technical logs | The provider’s security retention period (typically days to a few months), then deleted automatically. |
 | Anonymous play counter | Indefinitely, as it cannot be linked to a person. |
+| Purchase data | For the duration of the subscription or purchase; afterwards for consumer-claim limitation periods and statutory tax/commercial retention periods, then deleted or anonymised. On-device records are removed when you uninstall. |
+| Ad data | Per Google AdMob’s retention policy. You can withdraw consent at any time and reset or delete your Advertising ID in Android Settings → Privacy → Ads. |
 | Correspondence | **Up to 3 years** after the matter is closed, then deleted or anonymised; longer only for the limitation period of a pending legal dispute. |
 
 ### 9. Security
@@ -217,6 +228,7 @@ No method of transmission or storage is 100% secure. If a personal data breach o
 - No identity data is requested in the App.
 - If you believe a child’s data has been processed, contact us and we will delete it promptly.
 - Users under 18 should use the App under parental guidance.
+- If ads are shown, users who indicate they are minors are not shown personalised ads.
 
 ### 11. Your Rights and How to Exercise Them
 

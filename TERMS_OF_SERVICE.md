@@ -147,8 +147,52 @@ Tüketici olarak hareket ediyorsanız şu düzenlemelerin **emredici hükümleri
 - AB tüketici mevzuatı (ör. 2019/770 sayılı Dijital İçerik Direktifi),
 - ikamet ettiğiniz ülkenin tüketici hukuku.
 
-### 14. Ücretli Özellikler
-Şu an tüm özellikler ücretsizdir. İleride ücretli özellik sunulursa ödemeler Google Play üzerinden alınır; Google Play iade politikası ve ilgili tüketici mevzuatı uygulanır.
+### 14. Ücretli Özellikler, Abonelikler ve Reklamlar
+**14.1 Kapsam.** Şu an tüm özellikler ücretsizdir. Uygulamada ücretli özellik, tek seferlik satın alma veya abonelik (“Premium”) sunulduğunda bu madde uygulanır.
+
+**14.2 Ödeme.**
+- Tüm ödemeler **Google Play Faturalandırma** üzerinden alınır.
+- Ödeme, faturalandırma ve vergiler Google Play Hizmet Şartlarına tabidir.
+- Geliştirici kart veya ödeme bilgilerinize **erişmez**.
+- Fiyat, para birimi, vergiler ve abonelik süresi satın almadan önce satın alma ekranında gösterilir. Google Play’de gösterilen fiyat esastır.
+
+**14.3 Otomatik yenileme ve iptal.**
+- Abonelikler, mevcut dönem bitmeden iptal edilmezse **aynı süre için ve o anki fiyattan otomatik olarak yenilenir.**
+- İptal için: Google Play Store → profil simgesi → **Ödemeler ve abonelikler → Abonelikler** → Solfery → **Aboneliği iptal et**.
+- **Uygulamayı silmek aboneliği iptal etmez.**
+- İptalden sonra Premium erişiminiz ödenmiş dönemin sonuna kadar devam eder.
+
+**14.4 Ücretsiz deneme.** Ücretsiz deneme sunulursa, süresi ve sonunda ücretlendirmenin başlayacağı satın alma ekranında açıkça gösterilir. Deneme bitmeden iptal etmezseniz ücretli aboneliğe dönüşür.
+
+**14.5 Fiyat değişiklikleri.** Abonelik fiyatındaki değişiklikler, Google Play kuralları ve yürürlükteki hukuk çerçevesinde size önceden bildirilir. Gerekli hâllerde yeni fiyat için onayınız alınır. Onay vermezseniz abonelik dönem sonunda sona erer.
+
+**14.6 Cayma hakkı.**
+- Premium, satın alma onayınızla birlikte **anında kullanımınıza açılan** bir dijital içerik ve hizmettir.
+- 6502 sayılı Kanun md. 48 ve Mesafeli Sözleşmeler Yönetmeliği md. 15 ile AB 2011/83/AB sayılı Tüketici Hakları Direktifi md. 16 uyarınca, satın almadan önce ifanın hemen başlamasına **açıkça onay vermeniz** ve bu nedenle **cayma hakkınızı kaybedeceğinizi kabul etmeniz** hâlinde cayma hakkınız sona erer.
+- Bu onay satın alma ekranında **ayrıca** alınır.
+- Onayın alınmadığı durumlarda kanuni cayma hakkınız saklıdır.
+
+**14.7 İade.**
+- İade talepleri öncelikle Google Play’in iade politikası çerçevesinde Google’a yapılır.
+- Google’ın iade süresi geçtiyse **yesilkayahazal@gmail.com** adresine başvurabilirsiniz.
+- Ayıplı hizmet dâhil, 6502 sayılı Kanun ve ikamet ettiğiniz ülkenin emredici tüketici hukukundan doğan haklarınız saklıdır.
+
+**14.8 Satın alımların geri yüklenmesi.** Uygulamada hesap sistemi olmadığından satın alımlar **Google hesabınıza** bağlıdır. Cihaz değiştirdiğinizde veya Uygulamayı yeniden yüklediğinizde, aynı Google hesabıyla “Satın alımları geri yükle” seçeneğini kullanabilirsiniz.
+
+**14.9 Premium kapsamındaki değişiklikler.**
+- Premium özellikler geliştirilebilir veya değiştirilebilir.
+- Ödenmiş bir abonelik döneminde Premium’un temel özellikleri **esaslı ölçüde azaltılırsa**, aboneliği iptal edip kalan süre için orantılı iade talep edebilirsiniz.
+- Premium tamamen sonlandırılırsa, aktif abonelere kalan süre için orantılı iade yapılır veya erişimleri dönem sonuna kadar sürdürülür.
+
+**14.10 Sorumluluk değişmez.** Premium satın almak, Kullanıcı İçeriği üzerinde size yeni bir hak vermez ve §5, §6 ve §7’deki sorumluluklarınızı değiştirmez.
+
+**14.11 Reklamlar.**
+- Uygulamanın ücretsiz sürümünde, Google AdMob gibi üçüncü taraf reklam ağları aracılığıyla reklam gösterilebilir.
+- Reklamların içeriği reklamverenlere ve reklam ağına aittir. Geliştirici reklamları önceden seçmez, onaylamaz ve **reklamı yapılan ürün ya da hizmetleri desteklemez.**
+- Reklamlara tıklayarak gittiğiniz siteler ve yaptığınız alışverişler, yalnızca sizinle ilgili üçüncü taraf arasındadır. Geliştirici bunlardan sorumlu değildir.
+- **Kişiselleştirilmiş reklamlar** yalnızca ayrı olarak verdiğiniz açık rızaya dayanır. Rıza vermezseniz Uygulamayı kullanmaya devam edebilirsiniz; bu durumda size kişiselleştirilmemiş reklamlar gösterilir.
+- Reklam engelleme, sahte tıklama veya gösterim üretme gibi reklam sistemini manipüle eden davranışlar yasaktır.
+- Premium sunulursa, Premium kullanıcılara reklam gösterilip gösterilmeyeceği satın alma ekranında belirtilir.
 
 ### 15. Fesih
 - Koşulları ihlal ederseniz lisansınız kendiliğinden sona erer.
@@ -325,8 +369,52 @@ If you act as a consumer, the **mandatory provisions** of the following prevail 
 - EU consumer law (e.g. Digital Content Directive 2019/770);
 - the consumer law of your country of residence.
 
-### 14. Paid Features
-All features are currently free. If paid features are introduced, payments are processed by Google Play, and Google Play’s refund policy and applicable consumer law apply.
+### 14. Paid Features, Subscriptions and Ads
+**14.1 Scope.** All features are currently free. This section applies when paid features, one-time purchases or subscriptions (“Premium”) are offered in the App.
+
+**14.2 Payment.**
+- All payments are processed through **Google Play Billing**.
+- Payment, invoicing and taxes are governed by the Google Play Terms of Service.
+- The Developer **never has access** to your card or payment details.
+- Price, currency, taxes and subscription period are shown on the purchase screen before you buy. The price shown in Google Play prevails.
+
+**14.3 Auto-renewal and cancellation.**
+- Subscriptions **renew automatically for the same period at the then-current price** unless cancelled before the current period ends.
+- To cancel: Google Play Store → profile icon → **Payments & subscriptions → Subscriptions** → Solfery → **Cancel subscription**.
+- **Uninstalling the App does not cancel a subscription.**
+- After cancellation, Premium access continues until the end of the paid period.
+
+**14.4 Free trials.** If a free trial is offered, its length and the start of charges are clearly shown on the purchase screen. Unless you cancel before the trial ends, it converts into a paid subscription.
+
+**14.5 Price changes.** Subscription price changes are notified to you in advance under Google Play rules and applicable law. Where required, your consent to the new price is requested. If you do not consent, the subscription ends at the end of the period.
+
+**14.6 Right of withdrawal.**
+- Premium is digital content and a service **made available immediately** once you confirm the purchase.
+- Under Turkish Law No. 6502 Art. 48, the Distance Contracts Regulation Art. 15, and Art. 16 of EU Consumer Rights Directive 2011/83/EU, your right of withdrawal ends if, before purchase, you **expressly consent** to immediate performance and **acknowledge that you thereby lose your right of withdrawal**.
+- This consent is collected **separately** on the purchase screen.
+- Where it has not been collected, your statutory right of withdrawal remains.
+
+**14.7 Refunds.**
+- Refund requests are first handled by Google under Google Play’s refund policy.
+- If Google’s refund window has passed, you may contact **yesilkayahazal@gmail.com**.
+- Your rights under mandatory consumer law, including for defective services, are unaffected.
+
+**14.8 Restoring purchases.** As the App has no accounts, purchases are tied to your **Google account**. When you change devices or reinstall, use “Restore purchases” with the same Google account.
+
+**14.9 Changes to Premium.**
+- Premium features may evolve or change.
+- If Premium’s core features are **materially reduced** during a paid subscription period, you may cancel and request a pro-rata refund for the remaining period.
+- If Premium is discontinued entirely, active subscribers receive a pro-rata refund or keep access until the end of their period.
+
+**14.10 No change to responsibility.** Buying Premium grants no rights in User Content and does not change your responsibilities under §§5–7.
+
+**14.11 Ads.**
+- The free version of the App may show ads through third-party ad networks such as Google AdMob.
+- Ad content belongs to advertisers and the ad network. The Developer does not pre-select or approve ads and **does not endorse advertised products or services.**
+- Sites you visit and purchases you make through ads are solely between you and that third party. The Developer is not responsible for them.
+- **Personalised ads** rely only on your separate, explicit consent. If you do not consent, you can keep using the App and will see non-personalised ads.
+- Manipulating the ad system (e.g. generating fake clicks or impressions) is prohibited.
+- If Premium is offered, the purchase screen states whether Premium users see ads.
 
 ### 15. Termination
 - Your license ends automatically if you breach these Terms.

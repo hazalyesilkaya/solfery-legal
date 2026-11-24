@@ -1,0 +1,176 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solfery — Reklam Açık Rıza Metni / Ads Consent Notice</title><meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♪</text></svg>">
+<style>
+:root{--bg:#ECEAE6;--surface:#F5F3EF;--card:#FFFFFF;--line:#D8D4CC;--text:#2E3034;--muted:#605E58;--accent:#3D5A80;--accent-soft:#E3E8EF;--radius:18px}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--surface:#1A1C20;--card:#1F2126;--line:#2E3138;--text:#E6E4DF;--muted:#A19E97;--accent:#8FB3E0;--accent-soft:#1F2A38}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{max-width:1080px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--text)}
+.logo{width:34px;height:34px;border-radius:10px;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-size:19px}
+nav.top{margin-left:auto;display:flex;gap:6px;align-items:center}
+nav.top a{padding:7px 12px;border-radius:999px;color:var(--muted);font-size:14px;font-weight:500}
+nav.top a.on,nav.top a:hover{background:var(--accent-soft);color:var(--accent);text-decoration:none}
+.lang{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;color:var(--muted);font:600 13px inherit;padding:5px 11px;border-radius:999px;cursor:pointer}
+.lang button.on{background:var(--accent);color:var(--bg)}
+.hero{max-width:1080px;margin:auto;padding:44px 20px 18px}
+.hero h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0 0 10px;letter-spacing:-.02em}
+.meta{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);padding:4px 12px;border-radius:999px}
+.wrap{max-width:1080px;margin:auto;padding:10px 20px 60px;display:grid;grid-template-columns:250px 1fr;gap:28px;align-items:start}
+aside{position:sticky;top:84px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 10px;max-height:calc(100vh - 110px);overflow:auto}
+aside b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:0 10px 8px}
+aside a{display:block;padding:6px 10px;border-radius:10px;color:var(--text);font-size:14px;line-height:1.4}
+aside a:hover,aside a.on{background:var(--accent-soft);color:var(--accent);text-decoration:none}
+article{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:8px 36px 32px;min-width:0}
+article h3{font-size:20px;margin:34px 0 10px;padding-top:6px;letter-spacing:-.01em}
+article h3:first-child{margin-top:24px}
+article p,article li{color:var(--text)}article li{margin:4px 0}
+article strong{font-weight:650}
+.callout{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:12px;padding:4px 18px;margin:22px 0}
+.tw{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--surface);font-weight:600}tr:last-child td{border-bottom:0}
+code{background:var(--surface);padding:1px 6px;border-radius:6px;font-size:.9em}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+[data-lang]{display:none}body.tr [data-lang=tr],body.en [data-lang=en]{display:block}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:0 20px 40px}
+.cards{max-width:1080px;margin:auto;padding:10px 20px 60px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;color:var(--text);transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:var(--accent);text-decoration:none}
+.card .ic{font-size:28px}.card h2{margin:10px 0 6px;font-size:21px}.card p{margin:0;color:var(--muted)}
+.feat{max-width:1080px;margin:auto;padding:0 20px 20px;display:flex;flex-wrap:wrap;gap:8px}
+@media (max-width:860px){.wrap{grid-template-columns:1fr}aside{display:none}article{padding:4px 20px 24px}nav.top a{padding:6px 8px}.bar{gap:8px;padding:12px 14px}.brand{font-size:16px}}html,body{overflow-x:hidden}
+</style></head><body class="tr"><header><div class="bar">
+<a class="brand" href="index.html"><span class="logo">♪</span>Solfery</a>
+<nav class="top"><a class="" href="privacy.html"><span data-t-tr="Gizlilik" data-t-en="Privacy">Gizlilik</span></a><a class="" href="terms.html"><span data-t-tr="Koşullar" data-t-en="Terms">Koşullar</span></a>
+<div class="lang"><button data-l="tr" onclick="setLang('tr')">TR</button><button data-l="en" onclick="setLang('en')">EN</button></div></nav>
+</div></header><section class="hero"><h1><span data-t-tr="Kişiselleştirilmiş Reklam Açık Rıza Metni" data-t-en="Personalised Ads Consent Notice">Kişiselleştirilmiş Reklam Açık Rıza Metni</span></h1>
+<div class="meta"><span class="chip"><span data-t-tr="Yürürlük: 24 Kasım 2026" data-t-en="Effective: 24 November 2026">Yürürlük: 24 Kasım 2026</span></span><span class="chip"><span data-t-tr="Sürüm 1.0" data-t-en="Version 1.0">Sürüm 1.0</span></span><span class="chip">com.dev.solfery</span></div></section>
+<div class="wrap"><aside><div data-lang="tr"><b>İçindekiler</b><a href="#s1">1. Bu Metin Ne İçin?</a><a href="#s2">2. Rıza Vermek Zorunda mıyım?</a><a href="#s3">3. Neye Rıza Veriyorum?</a><a href="#s4">4. Yurt Dışına Aktarım</a><a href="#s5">5. Rızamı Nasıl Geri Çekerim?</a><a href="#s6">6. Haklarınız</a><a href="#s7">7. Yaş</a></div><div data-lang="en"><b>Contents</b><a href="#e1">1. What Is This For?</a><a href="#e2">2. Do I Have to Consent?</a><a href="#e3">3. What Am I Consenting To?</a><a href="#e4">4. International Transfers</a><a href="#e5">5. How Do I Withdraw Consent?</a><a href="#e6">6. Your Rights</a><a href="#e7">7. Age</a></div></aside><article><div data-lang="tr"><h3 id="s1">1. Bu Metin Ne İçin?</h3>
+<p>Bu metin, <strong>yalnızca Uygulamada reklam gösterilmeye başlandığında</strong> kullanılır. Size, kişisel verilerinizin <strong>kişiselleştirilmiş reklam</strong> amacıyla işlenmesine açık rıza verip vermeme seçeneği sunar.</p>
+<p>Bu metin <a href="privacy.html">Gizlilik Politikası ve Aydınlatma Metni</a>’nden <strong>ayrıdır.</strong> Aydınlatma metni yalnızca bilgilendirme amaçlıdır ve onay gerektirmez; bu metin ise <strong>sizin özgür seçiminize</strong> bağlıdır.</p>
+<h3 id="s2">2. Rıza Vermek Zorunda mıyım?</h3>
+<p><strong>Hayır.</strong> Rıza vermek tamamen isteğe bağlıdır.</p>
+<ul>
+<li>Rıza vermezseniz Uygulamanın <strong>tüm özelliklerini aynı şekilde kullanmaya devam edersiniz.</strong></li>
+<li>Bu durumda yalnızca ilgi alanlarınıza göre seçilmemiş, <strong>kişiselleştirilmemiş reklamlar</strong> görürsünüz.</li>
+<li>Rıza vermemeniz hiçbir özelliğin kısıtlanmasına yol açmaz.</li>
+</ul>
+<h3 id="s3">3. Neye Rıza Veriyorum?</h3>
+<p>Rıza verirseniz, <strong>Hazal Yeşilkaya</strong> (veri sorumlusu) ve reklam ağı <strong>Google AdMob</strong> (Google LLC / Google Ireland Ltd.) aşağıdaki verilerinizi şu amaçla işler: <strong>size ilgi alanlarınıza göre kişiselleştirilmiş reklam göstermek ve bu reklamların performansını ölçmek.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>İşlenecek veri</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reklam kimliği</td>
+<td>Android Advertising ID (Ayarlar’dan sıfırlanabilir veya silinebilir)</td>
+</tr>
+<tr>
+<td>Cihaz ve bağlantı bilgileri</td>
+<td>IP adresi, cihaz modeli, işletim sistemi, dil</td>
+</tr>
+<tr>
+<td>Yaklaşık konum</td>
+<td>IP adresinden çıkarılan ülke/şehir düzeyinde konum (kesin GPS konumu <strong>kullanılmaz</strong>)</td>
+</tr>
+<tr>
+<td>Reklam etkileşimleri</td>
+<td>Gösterilen reklamlar, tıklamalar</td>
+</tr>
+</tbody>
+</table></div>
+<p>Google, bu verileri kendi reklam hizmetleri kapsamında ve <a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>’na göre işler. Google’ın reklam verilerini nasıl kullandığı hakkında bilgi: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></p>
+<p><strong>İşlenmeyecek veriler:</strong> adınız, e-postanız, kesin konumunuz, içe aktardığınız dosyalar ve ürettiğiniz notalar, özel nitelikli kişisel veriler.</p>
+<h3 id="s4">4. Yurt Dışına Aktarım</h3>
+<p>Reklam verileri Google’ın Türkiye dışındaki (ağırlıklı olarak ABD’deki) sunucularında işlenir. Bu aktarım, KVKK md. 9’da öngörülen <strong>uygun güvenceler</strong> çerçevesinde gerçekleştirilir. Ayrıntılar için <a href="privacy.html">Gizlilik Politikası §7</a>’ye bakın.</p>
+<h3 id="s5">5. Rızamı Nasıl Geri Çekerim?</h3>
+<p>Rızanızı <strong>istediğiniz an, gerekçe göstermeden</strong> geri çekebilirsiniz:</p>
+<ul>
+<li>Uygulamada <strong>Ayarlar → Reklam tercihleri</strong> bölümünden; veya</li>
+<li>Android <strong>Ayarlar → Gizlilik → Reklamlar</strong> bölümünden reklam kimliğinizi silerek.</li>
+</ul>
+<p>Geri çekme, o ana kadar yapılan işlemenin hukuka uygunluğunu etkilemez. Geri çektikten sonra yalnızca kişiselleştirilmemiş reklam görürsünüz.</p>
+<h3 id="s6">6. Haklarınız</h3>
+<p>KVKK md. 11 ve GDPR kapsamındaki tüm haklarınız ile başvuru yöntemi <a href="privacy.html">Gizlilik Politikası §11</a>’de açıklanmıştır. İletişim: <strong>yesilkayahazal@gmail.com</strong></p>
+<h3 id="s7">7. Yaş</h3>
+<p>Reşit olmadığını belirten kullanıcılardan bu rıza istenmez ve bu kullanıcılara kişiselleştirilmiş reklam gösterilmez.</p></div><div data-lang="en"><h3 id="e1">1. What Is This For?</h3>
+<p>This notice is used <strong>only once the App starts showing ads.</strong> It lets you choose whether to give explicit consent to the processing of your personal data for <strong>personalised advertising.</strong></p>
+<p>It is <strong>separate</strong> from the <a href="privacy.html">Privacy Policy</a>. The Privacy Policy is for information only and needs no acceptance; this notice depends on <strong>your free choice.</strong></p>
+<h3 id="e2">2. Do I Have to Consent?</h3>
+<p><strong>No.</strong> Consent is entirely optional.</p>
+<ul>
+<li>If you do not consent, you <strong>keep using every feature of the App in the same way.</strong></li>
+<li>You will see only <strong>non-personalised ads</strong>, which are not based on your interests.</li>
+<li>Not consenting does not restrict any feature.</li>
+</ul>
+<h3 id="e3">3. What Am I Consenting To?</h3>
+<p>If you consent, <strong>Hazal Yeşilkaya</strong> (controller) and the ad network <strong>Google AdMob</strong> (Google LLC / Google Ireland Ltd.) process the data below for one purpose: <strong>showing you ads personalised to your interests and measuring their performance.</strong></p>
+<div class="tw"><table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Advertising ID</td>
+<td>Android Advertising ID (can be reset or deleted in Settings)</td>
+</tr>
+<tr>
+<td>Device and connection data</td>
+<td>IP address, device model, OS, language</td>
+</tr>
+<tr>
+<td>Approximate location</td>
+<td>Country/city level, derived from IP (precise GPS location is <strong>not</strong> used)</td>
+</tr>
+<tr>
+<td>Ad interactions</td>
+<td>Ads shown, clicks</td>
+</tr>
+</tbody>
+</table></div>
+<p>Google processes this data for its advertising services under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. How Google uses ad data: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></p>
+<p><strong>Not processed:</strong> your name, email, precise location, imported files and generated scores, or special-category data.</p>
+<h3 id="e4">4. International Transfers</h3>
+<p>Ad data is processed on Google’s servers outside Türkiye (mainly in the USA), under the <strong>appropriate safeguards</strong> of KVKK Art. 9 and GDPR Chapter V. See <a href="privacy.html">Privacy Policy §7</a>.</p>
+<h3 id="e5">5. How Do I Withdraw Consent?</h3>
+<p>You can withdraw consent <strong>at any time, without giving reasons</strong>:</p>
+<ul>
+<li>in the App under <strong>Settings → Ad preferences</strong>; or</li>
+<li>by deleting your Advertising ID in Android <strong>Settings → Privacy → Ads</strong>.</li>
+</ul>
+<p>Withdrawal does not affect the lawfulness of processing before it. Afterwards you will see only non-personalised ads.</p>
+<h3 id="e6">6. Your Rights</h3>
+<p>All your rights under KVKK Art. 11 and the GDPR, and how to exercise them, are described in <a href="privacy.html">Privacy Policy §11</a>. Contact: <strong>yesilkayahazal@gmail.com</strong></p>
+<h3 id="e7">7. Age</h3>
+<p>Users who indicate they are minors are not asked for this consent and are not shown personalised ads.</p></div></article></div><footer>© 2026 Solfery · Hazal Yeşilkaya · <a href="mailto:yesilkayahazal@gmail.com">yesilkayahazal@gmail.com</a></footer>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search).get('lang'),s=null;
+  try{s=localStorage.getItem('solfery-lang')}catch(e){}
+  var l=q||s||((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');
+  window.setLang=function(x){document.body.className=x;document.documentElement.lang=x;
+    document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.l===x)});
+    document.querySelectorAll('[data-t-'+x+']').forEach(function(e){e.textContent=e.getAttribute('data-t-'+x)});
+    try{localStorage.setItem('solfery-lang',x)}catch(e){}};
+  setLang(l==='en'?'en':'tr');
+  var links=[].slice.call(document.querySelectorAll('aside a'));
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-90px 0px -70% 0px'});
+    document.querySelectorAll('article h3').forEach(function(h){io.observe(h)})}
+})();
+</script></body></html>
