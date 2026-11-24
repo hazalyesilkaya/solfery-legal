@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="tr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solfery</title><meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♪</text></svg>">
+<style>
+:root{--bg:#ECEAE6;--surface:#F5F3EF;--card:#FFFFFF;--line:#D8D4CC;--text:#2E3034;--muted:#605E58;--accent:#3D5A80;--accent-soft:#E3E8EF;--radius:18px}
+@media (prefers-color-scheme:dark){:root{--bg:#121316;--surface:#1A1C20;--card:#1F2126;--line:#2E3138;--text:#E6E4DF;--muted:#A19E97;--accent:#8FB3E0;--accent-soft:#1F2A38}}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{max-width:1080px;margin:auto;padding:14px 20px;display:flex;align-items:center;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--text)}
+.logo{width:34px;height:34px;border-radius:10px;background:var(--accent);color:var(--bg);display:grid;place-items:center;font-size:19px}
+nav.top{margin-left:auto;display:flex;gap:6px;align-items:center}
+nav.top a{padding:7px 12px;border-radius:999px;color:var(--muted);font-size:14px;font-weight:500}
+nav.top a.on,nav.top a:hover{background:var(--accent-soft);color:var(--accent);text-decoration:none}
+.lang{display:flex;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;color:var(--muted);font:600 13px inherit;padding:5px 11px;border-radius:999px;cursor:pointer}
+.lang button.on{background:var(--accent);color:var(--bg)}
+.hero{max-width:1080px;margin:auto;padding:44px 20px 18px}
+.hero h1{font-size:clamp(28px,5vw,42px);line-height:1.15;margin:0 0 10px;letter-spacing:-.02em}
+.meta{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);padding:4px 12px;border-radius:999px}
+.wrap{max-width:1080px;margin:auto;padding:10px 20px 60px;display:grid;grid-template-columns:250px 1fr;gap:28px;align-items:start}
+aside{position:sticky;top:84px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px 10px;max-height:calc(100vh - 110px);overflow:auto}
+aside b{display:block;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:0 10px 8px}
+aside a{display:block;padding:6px 10px;border-radius:10px;color:var(--text);font-size:14px;line-height:1.4}
+aside a:hover,aside a.on{background:var(--accent-soft);color:var(--accent);text-decoration:none}
+article{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:8px 36px 32px;min-width:0}
+article h3{font-size:20px;margin:34px 0 10px;padding-top:6px;letter-spacing:-.01em}
+article h3:first-child{margin-top:24px}
+article p,article li{color:var(--text)}article li{margin:4px 0}
+article strong{font-weight:650}
+.callout{background:var(--accent-soft);border-left:4px solid var(--accent);border-radius:12px;padding:4px 18px;margin:22px 0}
+.tw{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:14px}
+table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.5}
+th,td{padding:10px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--surface);font-weight:600}tr:last-child td{border-bottom:0}
+code{background:var(--surface);padding:1px 6px;border-radius:6px;font-size:.9em}
+hr{border:0;border-top:1px solid var(--line);margin:28px 0}
+[data-lang]{display:none}body.tr [data-lang=tr],body.en [data-lang=en]{display:block}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:0 20px 40px}
+.cards{max-width:1080px;margin:auto;padding:10px 20px 60px;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;color:var(--text);transition:transform .15s,border-color .15s}
+.card:hover{transform:translateY(-2px);border-color:var(--accent);text-decoration:none}
+.card .ic{font-size:28px}.card h2{margin:10px 0 6px;font-size:21px}.card p{margin:0;color:var(--muted)}
+.feat{max-width:1080px;margin:auto;padding:0 20px 20px;display:flex;flex-wrap:wrap;gap:8px}
+@media (max-width:860px){.wrap{grid-template-columns:1fr}aside{display:none}article{padding:4px 20px 24px}nav.top a{padding:6px 8px}.bar{gap:8px;padding:12px 14px}.brand{font-size:16px}}html,body{overflow-x:hidden}
+</style></head><body class="tr"><header><div class="bar">
+<a class="brand" href="index.html"><span class="logo">♪</span>Solfery</a>
+<nav class="top"><a class="" href="privacy.html"><span data-t-tr="Gizlilik" data-t-en="Privacy">Gizlilik</span></a><a class="" href="terms.html"><span data-t-tr="Koşullar" data-t-en="Terms">Koşullar</span></a>
+<div class="lang"><button data-l="tr" onclick="setLang('tr')">TR</button><button data-l="en" onclick="setLang('en')">EN</button></div></nav>
+</div></header><section class="hero"><h1><span data-t-tr="Nota oku, çal, dönüştür." data-t-en="Read, play and convert sheet music.">Nota oku, çal, dönüştür.</span></h1>
+<p style="color:var(--muted);max-width:640px;margin:0 0 18px"><span data-t-tr="Solfery; nota ve tablatürleri görüntüleyip çalabileceğin, kendi dosyalarını notaya dönüştürebileceğin bir Android uygulamasıdır. Hesap gerekmez, dosyaların cihazında kalır." data-t-en="Solfery is an Android app to view and play scores and tabs and convert your own files into notation. No account needed — your files stay on your device.">Solfery; nota ve tablatürleri görüntüleyip çalabileceğin, kendi dosyalarını notaya dönüştürebileceğin bir Android uygulamasıdır. Hesap gerekmez, dosyaların cihazında kalır.</span></p></section>
+<div class="feat"><span class="chip"><span data-t-tr="Nota görüntüleme ve çalma" data-t-en="Score display &amp; playback">Nota görüntüleme ve çalma</span></span><span class="chip"><span data-t-tr="Gitar tab" data-t-en="Guitar tabs">Gitar tab</span></span><span class="chip"><span data-t-tr="MIDI / Guitar Pro / ABC dönüştürme" data-t-en="MIDI / Guitar Pro / ABC conversion">MIDI / Guitar Pro / ABC dönüştürme</span></span><span class="chip"><span data-t-tr="Çevrimdışı kütüphane" data-t-en="Offline library">Çevrimdışı kütüphane</span></span><span class="chip"><span data-t-tr="PDF dışa aktarma" data-t-en="PDF export">PDF dışa aktarma</span></span><span class="chip"><span data-t-tr="Metronom ve tempo" data-t-en="Metronome &amp; tempo">Metronom ve tempo</span></span></div>
+<div class="cards">
+<a class="card" href="privacy.html"><div class="ic">🔒</div><h2><span data-t-tr="Gizlilik Politikası" data-t-en="Privacy Policy">Gizlilik Politikası</span></h2><p><span data-t-tr="Hangi verilerin işlendiği, nerede saklandığı ve KVKK/GDPR haklarınız." data-t-en="What data is processed, where it is stored, and your KVKK/GDPR rights.">Hangi verilerin işlendiği, nerede saklandığı ve KVKK/GDPR haklarınız.</span></p></a>
+<a class="card" href="terms.html"><div class="ic">📄</div><h2><span data-t-tr="Kullanım Koşulları" data-t-en="Terms of Service">Kullanım Koşulları</span></h2><p><span data-t-tr="Lisans, kullanıcı sorumluluğu, hak ihlali bildirimi ve uyuşmazlık çözümü." data-t-en="License, user responsibility, takedown notices and dispute resolution.">Lisans, kullanıcı sorumluluğu, hak ihlali bildirimi ve uyuşmazlık çözümü.</span></p></a>
+<a class="card" href="mailto:yesilkayahazal@gmail.com"><div class="ic">✉️</div><h2><span data-t-tr="İletişim" data-t-en="Contact">İletişim</span></h2><p><span data-t-tr="Soru, KVKK başvurusu veya telif bildirimi için bize yazın." data-t-en="Write to us for questions, data requests or copyright notices.">Soru, KVKK başvurusu veya telif bildirimi için bize yazın.</span></p></a>
+</div><footer>© 2026 Solfery · Hazal Yeşilkaya · <a href="mailto:yesilkayahazal@gmail.com">yesilkayahazal@gmail.com</a></footer>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search).get('lang'),s=null;
+  try{s=localStorage.getItem('solfery-lang')}catch(e){}
+  var l=q||s||((navigator.language||'').toLowerCase().indexOf('tr')===0?'tr':'en');
+  window.setLang=function(x){document.body.className=x;document.documentElement.lang=x;
+    document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.l===x)});
+    document.querySelectorAll('[data-t-'+x+']').forEach(function(e){e.textContent=e.getAttribute('data-t-'+x)});
+    try{localStorage.setItem('solfery-lang',x)}catch(e){}};
+  setLang(l==='en'?'en':'tr');
+  var links=[].slice.call(document.querySelectorAll('aside a'));
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-90px 0px -70% 0px'});
+    document.querySelectorAll('article h3').forEach(function(h){io.observe(h)})}
+})();
+</script></body></html>
